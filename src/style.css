@@ -620,6 +620,7 @@ html {
 .glass-dark .timeline-item {
   align-items: center;
   gap: 40px;
+  justify-content: center;
 }
 
 .glass-dark .timeline-time {
@@ -631,6 +632,7 @@ html {
 .glass-dark .timeline-content {
   border-left: none;
   padding: 0;
+  flex: 0 0 auto;
 }
 
 .glass-dark .timeline-content h3,
