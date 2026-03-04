@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
-<body style="background-color: var(--color-bg-white);">
-    <header style="background-color: var(--color-bg-white); border-bottom: 1px solid #e5e5ea;">
+<body class="animated-bg" style="min-height: 100vh;">
+    <header
+        style="background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.5);">
         <nav id="navbar">
             <li><a href="index.html" class="nav-logo">GCON 2026</a></li>
             <li><a href="index.html#about">About</a></li>
@@ -22,163 +23,166 @@
     </header>
 
     <main>
-        <div
-            style="background: var(--theme-gradient); padding: 120px 20px 60px 20px; text-align: center; margin-bottom: 60px;">
+        <div style="padding: 120px 20px 40px 20px; text-align: center;">
             <h1 style="font-size: 52px; font-weight: 700; color: #1d1d1f; letter-spacing: -0.02em; margin-bottom: 8px;">
                 Day 1 Agenda</h1>
             <p style="font-size: 22px; color: rgba(29, 29, 31, 0.8); font-weight: 500; margin-bottom: 0;">22 April 2026,
                 Wednesday</p>
         </div>
-        <section class="schedule-container fade-in" style="padding: 0 20px;">
+        <div style="max-width: 1024px; margin: 0 auto 100px auto; padding: 0 20px;">
+            <section class="schedule-container glass-container fade-in">
 
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-time">07:00 - 08:00</div>
-                    <div class="timeline-content">
-                        <h3>Breakfast + Registration</h3>
-                        <p>Arrival of Special Guests & VIPs</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-time">07:00 - 08:00</div>
+                        <div class="timeline-content">
+                            <h3>Breakfast + Registration</h3>
+                            <p>Arrival of Special Guests & VIPs</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">08:30 - 08:40</div>
+                        <div class="timeline-content">
+                            <h3>Negaraku & Corporate Song</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">08:45 - 08:55</div>
+                        <div class="timeline-content">
+                            <h3>Prayer Recital & Safety Briefing</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">09:00 - 09:15</div>
+                        <div class="timeline-content">
+                            <h3>GCON Welcoming Speech</h3>
+                            <p>by Genco Managing Director</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">09:20 - 09:35</div>
+                        <div class="timeline-content">
+                            <h3>Keynote Speech & Launching Ceremony</h3>
+                            <p>by TKSU (Tenaga PETRA)</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">09:40 - 09:50</div>
+                        <div class="timeline-content">
+                            <h3>Photo Session</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">09:55 - 10:55</div>
+                        <div class="timeline-content">
+                            <h3>Gallery Walk Session</h3>
+                            <p>with Special Guests & VIPs</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time" style="color: var(--color-theme-end);">10:00 - 10:30</div>
+                        <div class="timeline-content">
+                            <h3 style="color: var(--color-theme-end);">Tea Break & Networking</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">10:30 - 11:30</div>
+                        <div class="timeline-content">
+                            <h3>Forum #1: AOM Excellence</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">11:35 - 12:15</div>
+                        <div class="timeline-content">
+                            <h3>Sharing Session #1 (Hybrid session)</h3>
+                            <p style="font-style: italic;">Recovering Core Performance Through Operational Discipline
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time" style="color: var(--color-theme-end);">12:15 - 14:00</div>
+                        <div class="timeline-content">
+                            <h3 style="color: var(--color-theme-end);">Networking Lunch</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">14:00 - 14:30</div>
+                        <div class="timeline-content">
+                            <h3>Sharing Session #2</h3>
+                            <p style="font-style: italic;">Asset Reliability as the Foundation of Sustainable Value</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">14:35 - 15:05</div>
+                        <div class="timeline-content">
+                            <h3>Sharing Session #3</h3>
+                            <p style="font-style: italic;">Digital & Smart Optimization for Sustained Performance
+                                Improvement</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">15:10 - 15:40</div>
+                        <div class="timeline-content">
+                            <h3>Sharing Session #4</h3>
+                            <p style="font-style: italic;">Driving Efficiency Through Operational and Commercial
+                                Discipline
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time" style="color: var(--color-theme-end);">15:30 - 16:00</div>
+                        <div class="timeline-content">
+                            <h3 style="color: var(--color-theme-end);">Tea Break & Networking</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">16:00 - 16:30</div>
+                        <div class="timeline-content">
+                            <h3>Sharing Session #5</h3>
+                            <p style="font-style: italic;">Brown Assets Supporting Cleaner Outcomes</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">16:05 - 17:05</div>
+                        <div class="timeline-content">
+                            <h3>Sharing Session #6</h3>
+                            <p style="font-style: italic;">Execution Excellence & Internal Capability Strengthening</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">17:05</div>
+                        <div class="timeline-content">
+                            <h3>End of Day #1</h3>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-time">08:30 - 08:40</div>
-                    <div class="timeline-content">
-                        <h3>Negaraku & Corporate Song</h3>
-                    </div>
+                <div style="text-align: center; margin-top: 60px;">
+                    <a href="index.html#schedule" class="link-cta" style="font-weight: 500; font-size: 18px;">
+                        < Back to Main Schedule</a>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">08:45 - 08:55</div>
-                    <div class="timeline-content">
-                        <h3>Prayer Recital & Safety Briefing</h3>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">09:00 - 09:15</div>
-                    <div class="timeline-content">
-                        <h3>GCON Welcoming Speech</h3>
-                        <p>by Genco Managing Director</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">09:20 - 09:35</div>
-                    <div class="timeline-content">
-                        <h3>Keynote Speech & Launching Ceremony</h3>
-                        <p>by TKSU (Tenaga PETRA)</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">09:40 - 09:50</div>
-                    <div class="timeline-content">
-                        <h3>Photo Session</h3>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">09:55 - 10:55</div>
-                    <div class="timeline-content">
-                        <h3>Gallery Walk Session</h3>
-                        <p>with Special Guests & VIPs</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time" style="color: var(--color-theme-end);">10:00 - 10:30</div>
-                    <div class="timeline-content">
-                        <h3 style="color: var(--color-theme-end);">Tea Break & Networking</h3>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">10:30 - 11:30</div>
-                    <div class="timeline-content">
-                        <h3>Forum #1: AOM Excellence</h3>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">11:35 - 12:15</div>
-                    <div class="timeline-content">
-                        <h3>Sharing Session #1 (Hybrid session)</h3>
-                        <p style="font-style: italic;">Recovering Core Performance Through Operational Discipline</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time" style="color: var(--color-theme-end);">12:15 - 14:00</div>
-                    <div class="timeline-content">
-                        <h3 style="color: var(--color-theme-end);">Networking Lunch</h3>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">14:00 - 14:30</div>
-                    <div class="timeline-content">
-                        <h3>Sharing Session #2</h3>
-                        <p style="font-style: italic;">Asset Reliability as the Foundation of Sustainable Value</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">14:35 - 15:05</div>
-                    <div class="timeline-content">
-                        <h3>Sharing Session #3</h3>
-                        <p style="font-style: italic;">Digital & Smart Optimization for Sustained Performance
-                            Improvement</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">15:10 - 15:40</div>
-                    <div class="timeline-content">
-                        <h3>Sharing Session #4</h3>
-                        <p style="font-style: italic;">Driving Efficiency Through Operational and Commercial Discipline
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time" style="color: var(--color-theme-end);">15:30 - 16:00</div>
-                    <div class="timeline-content">
-                        <h3 style="color: var(--color-theme-end);">Tea Break & Networking</h3>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">16:00 - 16:30</div>
-                    <div class="timeline-content">
-                        <h3>Sharing Session #5</h3>
-                        <p style="font-style: italic;">Brown Assets Supporting Cleaner Outcomes</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">16:05 - 17:05</div>
-                    <div class="timeline-content">
-                        <h3>Sharing Session #6</h3>
-                        <p style="font-style: italic;">Execution Excellence & Internal Capability Strengthening</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-time">17:05</div>
-                    <div class="timeline-content">
-                        <h3>End of Day #1</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 60px;">
-                <a href="index.html#schedule" class="link-cta" style="font-weight: 500; font-size: 18px;">
-                    < Back to Main Schedule</a>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <footer style="background-color: #f5f5f7; padding: 40px 20px; text-align: center; border-top: 1px solid #d2d2d7;">
+    <footer
+        style="background-color: rgba(255,255,255,0.5); padding: 40px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.8); backdrop-filter: blur(10px);">
         <p style="color: #86868b; font-size: 12px;">© 2026 GCON. All rights reserved.</p>
     </footer>
     <script type="module" src="./src/main.js"></script>

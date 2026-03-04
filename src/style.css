@@ -501,3 +501,54 @@ html {
     overflow-x: visible;
   }
 }
+
+/* Agenda Buttons */
+.agenda-btn {
+  display: inline-block;
+  background-color: var(--color-bg-black);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s var(--transition-smooth);
+  border: 1px solid var(--color-bg-black);
+}
+
+.agenda-btn:hover {
+  background-color: #fff;
+  color: var(--color-bg-black);
+  border-color: #e5e5ea;
+}
+
+/* Animated Glassmorphism Backgrounds */
+.animated-bg {
+  background: linear-gradient(-45deg, #bdf2eb, #e5f3c6, #f2f9e4, #eaf6db);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  box-shadow: 0 10px 40px 0 rgba(31, 38, 135, 0.05);
+}
