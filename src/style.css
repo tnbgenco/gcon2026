@@ -603,24 +603,34 @@ html {
 
 /* Dark Glass Container for Breaks */
 .glass-dark {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(54, 58, 49, 0.95);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border-radius: 30px;
+  border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 20px 40px;
+  padding: 16px 48px;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
-  margin: 15px 0;
+  margin: -10px auto 15px auto;
   color: white;
+  width: fit-content;
+  position: relative;
+  z-index: 10;
+}
+
+.glass-dark .timeline-item {
+  align-items: center;
+  gap: 40px;
 }
 
 .glass-dark .timeline-time {
   color: white !important;
+  padding-top: 0;
+  flex: 0 0 auto;
 }
 
 .glass-dark .timeline-content {
-  border-left-color: rgba(255, 255, 255, 0.2);
-  padding-bottom: 0px;
+  border-left: none;
+  padding: 0;
 }
 
 .glass-dark .timeline-content h3,
