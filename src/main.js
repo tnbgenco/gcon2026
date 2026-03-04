@@ -1,5 +1,3 @@
-import './style.css'
-
 // Apple-style fade-in-on-scroll animation
 const observerOptions = {
   root: null,
