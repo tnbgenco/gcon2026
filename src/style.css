@@ -382,3 +382,113 @@ html {
     padding-top: 20px;
   }
 }
+
+/* Premium Speaker Slider */
+.speaker-slider-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.speaker-slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.speaker-list {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 24px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.speaker-list::-webkit-scrollbar {
+  display: none;
+}
+
+.dark-card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  padding: 0;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s var(--transition-smooth);
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.dark-card:hover {
+  transform: translateY(-5px);
+}
+
+.speaker-img-wrapper {
+  width: 100%;
+  height: 280px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.speaker-portrait {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.1);
+  position: relative;
+  z-index: 2;
+  margin-bottom: -10px;
+}
+
+/* Premium Image Gradients */
+.bg-gradient-pink {
+  background: linear-gradient(135deg, #ff4d79 0%, #ff80ab 100%);
+}
+
+.bg-gradient-blue-green {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.bg-gradient-green-yellow {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.bg-gradient-yellow-green {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.bg-gradient-purple-blue {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.dark-card .speaker-info {
+  padding: 24px;
+}
+
+.dark-card .speaker-info h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.dark-card .speaker-info .role {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a1a1a6;
+  margin-bottom: 4px;
+}
+
+.dark-card .speaker-info .company {
+  font-size: 14px;
+  color: #86868b;
+}
