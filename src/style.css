@@ -82,6 +82,11 @@ nav li a:hover {
   opacity: 1;
 }
 
+.nav-dark li a {
+  color: #1d1d1f;
+  font-weight: 500;
+}
+
 /* Hero Sections */
 .hero {
   position: relative;
@@ -322,7 +327,7 @@ html {
 .timeline {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 15px;
 }
 
 .timeline-item {
@@ -331,7 +336,8 @@ html {
 }
 
 .timeline-time {
-  flex: 0 0 100px;
+  flex: 0 0 120px;
+  white-space: nowrap;
   font-size: 16px;
   font-weight: 600;
   color: var(--color-accent-blue);
@@ -342,7 +348,7 @@ html {
   flex: 1;
   padding-left: 30px;
   border-left: 2px solid #e5e5ea;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .timeline-content h3 {
@@ -551,4 +557,63 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.8);
   padding: 40px;
   box-shadow: 0 10px 40px 0 rgba(31, 38, 135, 0.05);
+}
+
+/* Schedule Tabs */
+.schedule-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.schedule-tabs .tab {
+  padding: 12px 32px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  transition: all 0.3s var(--transition-smooth);
+}
+
+.schedule-tabs .tab:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-primary);
+}
+
+.schedule-tabs .tab.active {
+  background: var(--color-bg-black);
+  color: white;
+  border-color: var(--color-bg-black);
+}
+
+/* Dark Glass Container for Breaks */
+.glass-dark {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 40px;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  color: white;
+}
+
+.glass-dark .timeline-time {
+  color: white !important;
+}
+
+.glass-dark .timeline-content {
+  border-left-color: rgba(255, 255, 255, 0.2);
+  padding-bottom: 0px;
+}
+
+.glass-dark .timeline-content h3,
+.glass-dark .timeline-content p {
+  color: white !important;
+  margin-bottom: 0px;
 }

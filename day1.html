@@ -12,7 +12,7 @@
 <body class="animated-bg" style="min-height: 100vh;">
     <header
         style="background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.5);">
-        <nav id="navbar">
+        <nav id="navbar" class="nav-dark">
             <li><a href="index.html" class="nav-logo" style="display: flex; align-items: center;"><img
                         src="./images/logo white.png" alt="GCON 2026" style="height: 28px;"></a></li>
             <li><a href="index.html#about">About</a></li>
@@ -31,6 +31,11 @@
                 Wednesday</p>
         </div>
         <div style="max-width: 1024px; margin: 0 auto 100px auto; padding: 0 20px;">
+            <div class="schedule-tabs fade-in">
+                <a href="day1.html" class="tab active">Day 1 Schedule</a>
+                <a href="day2.html" class="tab">Day 2 Schedule</a>
+            </div>
+
             <section class="schedule-container glass-container fade-in">
 
                 <div class="timeline">
@@ -87,12 +92,22 @@
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            <section class="schedule-container glass-dark fade-in">
+                <div class="timeline" style="gap: 0;">
                     <div class="timeline-item">
-                        <div class="timeline-time" style="color: var(--color-theme-end);">10:00 - 10:30</div>
-                        <div class="timeline-content">
-                            <h3 style="color: var(--color-theme-end);">Tea Break & Networking</h3>
+                        <div class="timeline-time">10:00 - 10:30</div>
+                        <div class="timeline-content" style="border-left: none;">
+                            <h3>Tea Break & Networking</h3>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="schedule-container glass-container fade-in">
+                <div class="timeline">
 
                     <div class="timeline-item">
                         <div class="timeline-time">10:30 - 11:30</div>
@@ -110,12 +125,22 @@
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            <section class="schedule-container glass-dark fade-in">
+                <div class="timeline" style="gap: 0;">
                     <div class="timeline-item">
-                        <div class="timeline-time" style="color: var(--color-theme-end);">12:15 - 14:00</div>
-                        <div class="timeline-content">
-                            <h3 style="color: var(--color-theme-end);">Networking Lunch</h3>
+                        <div class="timeline-time">12:15 - 14:00</div>
+                        <div class="timeline-content" style="border-left: none;">
+                            <h3>Networking Lunch</h3>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="schedule-container glass-container fade-in">
+                <div class="timeline">
 
                     <div class="timeline-item">
                         <div class="timeline-time">14:00 - 14:30</div>
@@ -144,12 +169,22 @@
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            <section class="schedule-container glass-dark fade-in">
+                <div class="timeline" style="gap: 0;">
                     <div class="timeline-item">
-                        <div class="timeline-time" style="color: var(--color-theme-end);">15:30 - 16:00</div>
-                        <div class="timeline-content">
-                            <h3 style="color: var(--color-theme-end);">Tea Break & Networking</h3>
+                        <div class="timeline-time">15:30 - 16:00</div>
+                        <div class="timeline-content" style="border-left: none;">
+                            <h3>Tea Break & Networking</h3>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="schedule-container glass-container fade-in">
+                <div class="timeline">
 
                     <div class="timeline-item">
                         <div class="timeline-time">16:00 - 16:30</div>
