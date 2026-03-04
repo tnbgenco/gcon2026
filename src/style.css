@@ -539,6 +539,26 @@ html {
   border-color: #e5e5ea;
 }
 
+.gradient-btn {
+  display: inline-block;
+  background: var(--theme-gradient);
+  color: var(--color-text-primary);
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s var(--transition-smooth);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+
 /* Animated Glassmorphism Backgrounds */
 .animated-bg {
   background: linear-gradient(-45deg, #bdf2eb, #e5f3c6, #f2f9e4, #eaf6db);
