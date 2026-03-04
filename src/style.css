@@ -612,7 +612,8 @@ html {
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
   margin: -10px auto 15px auto;
   color: white;
-  width: fit-content;
+  width: 90%;
+  max-width: 500px;
   position: relative;
   z-index: 10;
 }
