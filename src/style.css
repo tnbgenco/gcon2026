@@ -130,6 +130,17 @@ nav li a:hover {
   margin-bottom: 12px;
 }
 
+.hero-main-logo {
+  height: 120px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .hero-main-logo {
+    height: 240px;
+  }
+}
+
 .hero-cta {
   display: flex;
   gap: 30px;
