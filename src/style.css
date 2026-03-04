@@ -492,3 +492,12 @@ html {
   font-size: 14px;
   color: #86868b;
 }
+
+/* Desktop layout for speakers - static grid */
+@media (min-width: 1024px) {
+  .speaker-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+  }
+}
