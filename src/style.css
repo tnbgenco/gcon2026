@@ -280,3 +280,93 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* Schedule Pages Styling */
+.schedule-section {
+  padding: 80px 20px;
+  background-color: var(--color-bg-white);
+}
+
+.schedule-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.schedule-container h2 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+  color: var(--color-text-primary);
+}
+
+.schedule-intro {
+  font-size: 20px;
+  color: var(--color-text-secondary);
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 30px;
+}
+
+.timeline-time {
+  flex: 0 0 100px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-accent-blue);
+  padding-top: 4px;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-left: 30px;
+  border-left: 2px solid #e5e5ea;
+  padding-bottom: 20px;
+}
+
+.timeline-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-text-primary);
+}
+
+.timeline-content p {
+  font-size: 17px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.speaker-tag {
+  display: inline-block;
+  background-color: var(--color-bg-gray);
+  color: var(--color-text-primary);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 734px) {
+  .timeline-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .timeline-content {
+    border-left: none;
+    padding-left: 0;
+    border-top: 2px solid #e5e5ea;
+    padding-top: 20px;
+  }
+}
