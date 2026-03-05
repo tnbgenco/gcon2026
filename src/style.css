@@ -197,8 +197,8 @@ nav li a:hover {
 
   .venue-bg {
     transform: scale(2) !important;
-    transform-origin: bottom right !important;
-    object-position: right bottom !important;
+    transform-origin: bottom left !important;
+    object-position: left bottom !important;
   }
 }
 
