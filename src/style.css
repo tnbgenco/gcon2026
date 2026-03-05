@@ -189,6 +189,11 @@ nav li a:hover {
   .hero-subtitle {
     font-size: 20px;
   }
+
+  .grid-bg {
+    transform: scale(2);
+    transform-origin: bottom center;
+  }
 }
 
 .grid-item {
