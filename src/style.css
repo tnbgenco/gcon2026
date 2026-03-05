@@ -235,6 +235,11 @@ nav li a:hover {
   object-position: center bottom;
 }
 
+.venue-bg {
+  object-fit: cover !important;
+  width: 100% !important;
+}
+
 .networking-bg,
 .speaker-bg {
   object-position: center bottom !important;
