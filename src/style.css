@@ -190,7 +190,8 @@ nav li a:hover {
     font-size: 20px;
   }
 
-  .networking-bg {
+  .networking-bg,
+  .speaker-bg {
     object-position: bottom !important;
   }
 }
