@@ -528,6 +528,15 @@ html {
   }
 }
 
+/* Countdown widget: scale 2x on desktop */
+@media (min-width: 768px) {
+  .countdown-wrapper {
+    transform: scale(2);
+    transform-origin: top center;
+    margin-bottom: 60px;
+  }
+}
+
 /* Agenda Buttons */
 .agenda-btn {
   display: inline-block;
