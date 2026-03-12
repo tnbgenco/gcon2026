@@ -200,6 +200,11 @@ nav li a:hover {
     transform-origin: bottom center !important;
     object-position: center bottom !important;
   }
+
+  .feedback-img {
+    transform: scale(0.5) !important;
+    transform-origin: bottom center !important;
+  }
 }
 
 .grid-item {
