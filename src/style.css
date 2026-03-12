@@ -509,6 +509,10 @@ html {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
+.bg-theme-gradient {
+  background: var(--theme-gradient);
+}
+
 .dark-card .speaker-info {
   padding: 24px;
 }
