@@ -282,22 +282,19 @@
   <script>
     function openComingSoonModal() {
       const modal = document.getElementById('comingSoonModal');
-      modal.style.display = 'flex';
-      // Re-initialize logwork widget if it has an init function, else it works because display toggling preserves external iframe layout.
-      // Alternatively, force a resize event to trigger redraws if needed
-      window.dispatchEvent(new Event('resize'));
+      modal.classList.add('active');
     }
 
     function closeComingSoonModal() {
       const modal = document.getElementById('comingSoonModal');
-      modal.style.display = 'none';
+      modal.classList.remove('active');
     }
 
     // Close on overlay click
     window.onclick = function(event) {
       const modal = document.getElementById('comingSoonModal');
       if (event.target === modal) {
-        modal.style.display = 'none';
+        modal.classList.remove('active');
       }
     }
   </script>
