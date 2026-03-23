@@ -684,3 +684,76 @@ html {
   color: white !important;
   margin-bottom: 0px;
 }
+
+/* Coming Soon Modal Styles */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: var(--color-bg-white);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+  animation: modalFadeIn 0.3s var(--transition-smooth);
+}
+
+.modal-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ensure the logwork widget fits properly */
+.modal-content .countdown-wrapper {
+  margin-top: 10px;
+  transform: scale(1.5);
+  transform-origin: center center;
+}
+@media (max-width: 768px) {
+  .modal-content .countdown-wrapper {
+    transform: scale(1);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: var(--color-text-primary);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
