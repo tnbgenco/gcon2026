@@ -472,6 +472,7 @@ html {
   gap: 24px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  padding-top: 15px;
   padding-bottom: 24px;
   -ms-overflow-style: none;
   scrollbar-width: none;
