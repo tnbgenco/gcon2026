@@ -422,8 +422,8 @@ html {
   .timeline-content {
     border-left: none;
     padding-left: 0;
-    border-top: 2px solid #e5e5ea;
-    padding-top: 20px;
+    border-top: none;
+    padding-top: 10px;
   }
 }
 
