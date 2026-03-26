@@ -488,6 +488,8 @@ html {
   background-color: #1e1e1e;
   border-radius: 20px;
   padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: left;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s var(--transition-smooth);
