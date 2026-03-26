@@ -798,4 +798,29 @@ html {
 
 .modal-close:hover {
   color: #ffffff;
+}
+
+/* Speakers Modal Fixes */
+.modal-content.speakers-modal {
+  padding: 30px 20px !important;
+  max-width: 95% !important;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 734px) {
+  .modal-content.speakers-modal {
+    padding: 20px 10px !important;
+  }
+}
+
+/* Ensure modal speaker list doesn't wrap to multiple rows on desktop */
+@media (min-width: 1024px) {
+  .speakers-modal .speaker-list {
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    padding-bottom: 24px;
+    margin: 0;
+  }
 }
