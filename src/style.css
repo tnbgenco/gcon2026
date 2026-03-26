@@ -850,4 +850,9 @@ html {
   .speakers-modal .speaker-list::-webkit-scrollbar-thumb:hover {
     background: #888;
   }
+}
+
+/* Explicit top padding for modal popups to prevent hover clipping on all view sizes */
+.speakers-modal .speaker-list {
+  padding-top: 20px !important;
 }
