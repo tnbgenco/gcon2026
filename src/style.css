@@ -697,6 +697,16 @@ html {
   margin-bottom: 0px;
 }
 
+@media (max-width: 734px) {
+  .glass-dark .timeline-item {
+    gap: 2px;
+  }
+  .glass-dark .timeline-content h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
 /* Coming Soon Modal Styles */
 .modal-overlay {
   display: flex;
