@@ -416,14 +416,21 @@ html {
 @media (max-width: 734px) {
   .timeline-item {
     flex-direction: column;
-    gap: 10px;
+    gap: 2px;
+    border-bottom: 1px solid #e5e5ea;
+    padding-bottom: 20px;
+  }
+
+  .timeline-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
   .timeline-content {
     border-left: none;
     padding-left: 0;
     border-top: none;
-    padding-top: 10px;
+    padding-top: 0;
   }
 }
 
