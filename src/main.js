@@ -100,3 +100,75 @@ window.addEventListener('scroll', () => {
     img.style.transform = `translateX(calc(-50% + ${currentX}vw))`;
   });
 });
+
+// --- Live Agenda Indicator ---
+function updateLiveEvent() {
+  const isDay1 = window.location.pathname.includes('day1');
+  const isDay2 = window.location.pathname.includes('day2');
+  
+  if (!isDay1 && !isDay2) return;
+  
+  const targetDateStr = isDay1 ? '2026-04-22' : '2026-04-23';
+  const now = new Date();
+  
+  const currentDateStr = now.getFullYear() + '-' + 
+                         String(now.getMonth() + 1).padStart(2, '0') + '-' + 
+                         String(now.getDate()).padStart(2, '0');
+                         
+  if (currentDateStr !== targetDateStr) return;
+  
+  const currentHour = now.getHours();
+  const currentMin = now.getMinutes();
+  const currentTotalMins = currentHour * 60 + currentMin;
+
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  
+  timelineItems.forEach(item => {
+    const timeEl = item.querySelector('.timeline-time');
+    if (!timeEl) return;
+    
+    // Clean up existing dot if present
+    const existingDot = timeEl.querySelector('.blinking-dot');
+    if (existingDot) existingDot.remove();
+    
+    const timeText = timeEl.textContent.trim();
+    let isLive = false;
+    
+    if (timeText.includes('-')) {
+      const [startStr, endStr] = timeText.split('-').map(s => s.trim());
+      const [startH, startM] = startStr.split(':').map(Number);
+      const [endH, endM] = endStr.split(':').map(Number);
+      
+      const startTotalMins = startH * 60 + startM;
+      const endTotalMins = endH * 60 + endM;
+      
+      if (currentTotalMins >= startTotalMins && currentTotalMins < endTotalMins) {
+        isLive = true;
+      }
+    } else if (timeText.includes(':')) {
+      const [h, m] = timeText.split(':').map(Number);
+      const totalMins = h * 60 + m;
+      // Single time events are considered active for 30 minutes
+      if (currentTotalMins >= totalMins && currentTotalMins < totalMins + 30) {
+        isLive = true;
+      }
+    }
+    
+    if (isLive) {
+      const dot = document.createElement('span');
+      dot.className = 'blinking-dot';
+      timeEl.insertBefore(dot, timeEl.firstChild);
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  updateLiveEvent();
+  setInterval(updateLiveEvent, 60000); // Check every minute
+});
+
+// For dynamic execution safely in case DOM is already loaded (Vite HMR)
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  updateLiveEvent();
+  setInterval(updateLiveEvent, 60000);
+}
