@@ -898,4 +898,19 @@ html {
 
 .moderator-card .speaker-info .company {
   color: #444 !important;
+}
+
+/* Mobile-only footer separator */
+.mobile-hr {
+  display: none;
+}
+
+@media (max-width: 734px) {
+  .mobile-hr {
+    display: block;
+    border: none;
+    border-top: 1px solid rgba(134, 134, 139, 0.3);
+    margin: 0 auto 20px auto;
+    width: 60%;
+  }
 }
