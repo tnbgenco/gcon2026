@@ -106,23 +106,21 @@ window.addEventListener('scroll', () => {
   const factSection = document.getElementById('facts-scroll-section');
   if (factSection) {
     const factRect = factSection.getBoundingClientRect();
-    const factScrollHeight = factSection.offsetHeight - window.innerHeight;
+    const factScrollHeight = Math.max(1, factSection.offsetHeight - window.innerHeight);
     
-    if (factScrollHeight > 0) {
-      let factProgress = -factRect.top / factScrollHeight;
-      if (factProgress < 0) factProgress = 0;
-      if (factProgress > 1) factProgress = 1;
+    let factProgress = -factRect.top / factScrollHeight;
+    if (factProgress < 0) factProgress = 0;
+    if (factProgress > 1) factProgress = 1;
 
-      // Ease-out progress for counter
-      const factEaseOut = 1 - Math.pow(1 - factProgress, 3);
-      
-      const factNumbers = document.querySelectorAll('.fact-number');
-      factNumbers.forEach(el => {
-        const target = parseInt(el.getAttribute('data-target'));
-        const current = Math.round(target * factEaseOut);
-        el.innerText = current;
-      });
-    }
+    // Ease-out progress for counter
+    const factEaseOut = 1 - Math.pow(1 - factProgress, 3);
+    
+    const factNumbers = document.querySelectorAll('.fact-number');
+    factNumbers.forEach(el => {
+      const target = parseInt(el.getAttribute('data-target'));
+      const current = Math.round(target * factEaseOut);
+      el.innerText = current;
+    });
   }
 });
 
