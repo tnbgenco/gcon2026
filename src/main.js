@@ -99,7 +99,10 @@ window.addEventListener('scroll', () => {
     // Apply transform (centering anchor is left: 50%, so translate -50% first)
     img.style.transform = `translateX(calc(-50% + ${currentX}vw))`;
   });
-  // --- Sticky Scroll Animation for Facts ---
+});
+
+// --- Sticky Scroll Animation for Facts ---
+window.addEventListener('scroll', () => {
   const factSection = document.getElementById('facts-scroll-section');
   if (factSection) {
     const factRect = factSection.getBoundingClientRect();
