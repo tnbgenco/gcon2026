@@ -130,6 +130,10 @@ nav li a:hover {
   margin-bottom: 12px;
 }
 
+.hero-desc {
+  font-size: 21px;
+}
+
 .hero-main-logo {
   height: 120px;
   margin-bottom: 24px;
@@ -188,6 +192,10 @@ nav li a:hover {
 
   .hero-subtitle {
     font-size: 20px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
   }
 
   .grid-bg {
