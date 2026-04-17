@@ -926,7 +926,7 @@ html {
 /* Mobile Emcee Image Adjustments */
 @media (max-width: 768px) {
   #emcee-scroll-section {
-    height: 200vh !important;
+    height: 180vh !important;
   }
   #emcee-ika {
     left: calc(10% + 50px) !important;

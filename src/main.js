@@ -162,9 +162,12 @@ window.addEventListener('scroll', () => {
     if (p < 0) p = 0;
     if (p > 1) p = 1;
     
-    img.style.opacity = p;
+    // Ease-out cubic for smoother animation
+    const easeOut = 1 - Math.pow(1 - p, 3);
+    
+    img.style.opacity = easeOut;
     // Slight move-up effect for premium feel
-    img.style.transform = `translateX(-50%) translateY(${(1 - p) * 20}px)`;
+    img.style.transform = `translateX(-50%) translateY(${(1 - easeOut) * 20}px)`;
   });
 });
 
