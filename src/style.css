@@ -926,7 +926,7 @@ html {
 /* Mobile Emcee Image Adjustments */
 @media (max-width: 768px) {
   #emcee-ika {
-    left: 10% !important;
+    left: calc(10% + 10px) !important;
     height: 40% !important;
   }
   #emcee-dayangku {
