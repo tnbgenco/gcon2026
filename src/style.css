@@ -927,6 +927,13 @@ html {
 @media (max-width: 768px) {
   #emcee-ika {
     left: 10% !important;
+    height: 40% !important;
+  }
+  #emcee-dayangku {
+    height: 42.5% !important;
+  }
+  #emcee-ijat {
+    height: 47.5% !important;
   }
   .emcee-img {
     bottom: 0 !important;
