@@ -930,13 +930,13 @@ html {
   }
   #emcee-ika {
     left: calc(10% + 50px) !important;
-    height: 40% !important;
+    height: 60% !important;
   }
   #emcee-dayangku {
-    height: 42.5% !important;
+    height: 63.75% !important;
   }
   #emcee-ijat {
-    height: 47.5% !important;
+    height: 71.25% !important;
   }
   .emcee-img {
     bottom: 0 !important;
