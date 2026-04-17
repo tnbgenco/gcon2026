@@ -921,4 +921,14 @@ html {
     margin: 0 auto 20px auto;
     width: 60%;
   }
+}
+
+/* Mobile Emcee Image Adjustments */
+@media (max-width: 768px) {
+  #emcee-ika {
+    left: 10% !important;
+  }
+  .emcee-img {
+    bottom: 0 !important;
+  }
 }
