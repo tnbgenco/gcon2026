@@ -242,3 +242,25 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
   updateLiveEvent();
   setInterval(updateLiveEvent, 60000);
 }
+
+// --- Replay Video on Scroll for Speakers ---
+const videoReplayObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      if (typeof entry.target.play === 'function') {
+        entry.target.currentTime = 0; // Restart video
+        entry.target.play().catch(e => console.log('Video autoplay prevented:', e));
+      }
+    }
+  });
+}, { threshold: 0.1 });
+
+function initVideoReplay() {
+  const replayVideos = document.querySelectorAll('.speaker-bg');
+  replayVideos.forEach(v => videoReplayObserver.observe(v));
+}
+
+document.addEventListener('DOMContentLoaded', initVideoReplay);
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  initVideoReplay();
+}
