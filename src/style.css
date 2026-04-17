@@ -925,8 +925,11 @@ html {
 
 /* Mobile Emcee Image Adjustments */
 @media (max-width: 768px) {
+  #emcee-scroll-section {
+    height: 150vh !important;
+  }
   #emcee-ika {
-    left: calc(10% + 10px) !important;
+    left: calc(10% + 50px) !important;
     height: 40% !important;
   }
   #emcee-dayangku {
