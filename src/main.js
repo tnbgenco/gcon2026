@@ -124,6 +124,50 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// --- Sticky Scroll Animation for Emcees ---
+window.addEventListener('scroll', () => {
+  const section = document.getElementById('emcee-scroll-section');
+  if (!section) return;
+
+  const rect = section.getBoundingClientRect();
+  const top = rect.top;
+  const scrollHeight = Math.max(1, section.offsetHeight - window.innerHeight);
+  
+  let progress = -top / scrollHeight;
+  if (progress < 0) progress = 0;
+  if (progress > 1) progress = 1;
+
+  // Fade in text 
+  const emceeText = document.querySelector('.emcee-text-fade');
+  if (emceeText) {
+    if (progress > 0.05) {
+      emceeText.style.opacity = '1';
+      emceeText.style.transform = 'translateY(0)';
+    } else {
+      emceeText.style.opacity = '0';
+      emceeText.style.transform = 'translateY(20px)';
+    }
+  }
+
+  // Animation logic: fade in from IKA (1), then DAYANGKU (2), then IJAT (3)
+  const emceeImages = document.querySelectorAll('.emcee-img');
+  emceeImages.forEach((img) => {
+    const order = parseInt(img.getAttribute('data-order'));
+    let startP = 0, endP = 0.2;
+    if (order === 1) { startP = 0.1; endP = 0.3; }
+    else if (order === 2) { startP = 0.35; endP = 0.55; }
+    else if (order === 3) { startP = 0.6; endP = 0.8; }
+    
+    let p = (progress - startP) / (endP - startP);
+    if (p < 0) p = 0;
+    if (p > 1) p = 1;
+    
+    img.style.opacity = p;
+    // Slight move-up effect for premium feel
+    img.style.transform = `translateX(-50%) translateY(${(1 - p) * 20}px)`;
+  });
+});
+
 // --- Live Agenda Indicator ---
 function updateLiveEvent() {
   const isDay1 = window.location.pathname.includes('day1');
