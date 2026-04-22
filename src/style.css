@@ -942,4 +942,15 @@ html {
   .emcee-img {
     bottom: 0 !important;
   }
-}
+}
+
+/* Virtual Tour Height Adjustments */
+#vt-container {
+  height: 65vh;
+}
+@media (max-width: 768px) {
+  #vt-container {
+    height: 20vh !important;
+  }
+}
+
