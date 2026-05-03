@@ -960,22 +960,18 @@ html {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #000;
+  background-size: cover;
   min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 12px;
-  margin-bottom: 40px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 @media (max-width: 768px) {
   .gallery-parallax {
-    background-attachment: scroll; /* iOS Safari issue with background-attachment: fixed */
-    min-height: 300px;
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 }
 
